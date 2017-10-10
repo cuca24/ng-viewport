@@ -10,7 +10,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "gulp publish",
+    "prepublish": "rimraf dist && ngc -p tsconfig.aot.json",
     "serve": "concurrently --kill-others \"webpack-dev-server --config playground/webpack.js\" \"gulp dev\""
   },
   "keywords": [
@@ -44,6 +44,7 @@
     "html-webpack-plugin": "^2.28.0",
     "merge2": "^1.0.3",
     "reflect-metadata": "^0.1.10",
+    "rimraf": "^2.5.1",
     "run-sequence": "^1.2.2",
     "ts-loader": "^2.0.3",
     "typescript": "^2.2.1",

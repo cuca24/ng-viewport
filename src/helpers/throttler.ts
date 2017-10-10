@@ -13,7 +13,7 @@ export function throttler<T>(observable: Observable<T>, throttleTime: number):Ob
 			subj.next(e);
 		}
 
-		timeout = setTimeout(handler, throttleTime);
+		timeout = window.setTimeout(handler, throttleTime);
 
 		function handler() {
 			allowed = true;

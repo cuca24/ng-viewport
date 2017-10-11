@@ -10,8 +10,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "rimraf dist && ngc -p tsconfig.aot.json",
-    "preinstall": "rimraf dist && ngc -p tsconfig.aot.json",
+    "build": "rimraf dist && ngc -p tsconfig.aot.json",
     "serve": "concurrently --kill-others \"webpack-dev-server --config playground/webpack.js\" \"gulp dev\""
   },
   "keywords": [
@@ -35,6 +34,8 @@
   "devDependencies": {
     "@angular/common": "^4.0.1",
     "@angular/compiler": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/compiler-cli": "^4.0.1",
     "@angular/platform-browser": "^4.0.1",
     "@angular/platform-browser-dynamic": "^4.0.1",
     "concurrently": "^3.4.0",

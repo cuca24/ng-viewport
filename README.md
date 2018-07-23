@@ -1,11 +1,11 @@
-# Angular2 Viewport Module
+# Angular Viewport Module
 
 #### *__Usage:__*
  
-`npm install angular2-viewport --save`
+`npm install ng-viewport --save`
 
 ```typescript
-import { ViewportModule } from 'angular2-viewport';
+import { ViewportModule } from 'ng-viewport';
 
 @NgModule({
 	imports: [
@@ -71,7 +71,7 @@ _______________________________________________
 #### *__Usage:__*
 
 ```typescript
-import { ScrollService } from 'angular2-viewport';
+import { ScrollService } from 'ng-viewport';
 
 @Component({
 	selector: 'a-component'
@@ -109,7 +109,7 @@ export class AComponent {
 #### *__Usage:__*
 
 ```typescript
-import { TriggerService } from 'angular2-viewport';
+import { TriggerService } from 'ng-viewport';
 
 @Component({
 	selector: 'a-component'

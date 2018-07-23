@@ -1,16 +1,15 @@
 {
-  "name": "angular2-viewport",
-  "version": "1.4.3",
-  "description": "Angular 2 Viewport Directives & Services",
+  "name": "ng-viewport",
+  "version": "2.0.0",
+  "description": "Angular 5 Viewport Directives & Services",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alisahinozcelik/angular2-viewport.git"
+    "url": "https://github.com/lucasvienna/angular2-viewport.git"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "karma start ./tasks/karma/karma.conf.js",
-    "prepublish": "npm test && gulp publish",
     "serve": "concurrently --kill-others \"webpack-dev-server --config playground/webpack.js\" \"gulp dev\"",
     "push": "node tasks/push"
   },
@@ -24,10 +23,10 @@
     "service",
     "scroll"
   ],
-  "author": "alisahinozcelik@gmail.com",
+  "author": "luv@abox42.com",
   "license": "MIT",
   "dependencies": {
-    "@angular/core": "^4.0.1",
+    "@angular/core": "^5.0.3",
     "es6-shim": "^0.35.3",
     "lodash": "^4.17.4",
     "rxjs": "^5.2.0",
@@ -35,11 +34,12 @@
     "zone.js": "^0.8.5"
   },
   "devDependencies": {
-    "@angular/common": "^4.0.1",
-    "@angular/compiler": "^4.0.1",
-    "@angular/platform-browser": "^4.0.1",
-    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/common": "^5.0.3",
+    "@angular/compiler": "^5.0.3",
+    "@angular/platform-browser": "^5.0.3",
+    "@angular/platform-browser-dynamic": "^5.0.3",
     "@types/jasmine": "^2.5.47",
+    "ajv": "^6.5.2",
     "app-root-path": "^2.0.1",
     "concurrently": "^3.4.0",
     "del": "^2.2.2",
@@ -59,7 +59,7 @@
     "reflect-metadata": "^0.1.10",
     "run-sequence": "^1.2.2",
     "ts-loader": "^2.0.3",
-    "typescript": "^2.2.1",
+    "typescript": "^2.9.2",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
   }

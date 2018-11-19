@@ -1,12 +1,12 @@
 {
   "name": "ng-viewport",
-  "version": "2.0.1",
-  "description": "Angular 2 Viewport Directives & Services",
+  "version": "2.0.2",
+  "description": "Angular 5 Viewport Directives & Services",
   "author": "luv@abox42.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luv-320east/angular2-viewport.git"
+    "url": "https://github.com/luv-320east/ng-viewport.git"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

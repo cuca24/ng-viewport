@@ -14,7 +14,7 @@ export declare class InViewDirective {
     private trigger;
     el: ElementRef;
     private _config;
-    event: EventEmitter<{}>;
+    event: EventEmitter<any>;
     private subs;
     constructor(trigger: TriggerService, el: ElementRef);
     config: IConfig;

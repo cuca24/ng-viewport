@@ -7,8 +7,8 @@ var ScrollableContentDirective = /** @class */ (function () {
         this.scrollTargets = [];
     }
     ScrollableContentDirective.prototype.ngAfterViewInit = function () {
-        var _this = this;
         var _a;
+        var _this = this;
         if (this.targetSelector) {
             var list = Array.prototype.slice.call(this.el.nativeElement.querySelectorAll(this.targetSelector));
             (_a = this.scrollTargets).push.apply(_a, list);

@@ -13,8 +13,6 @@ var ViewportModule = /** @class */ (function () {
                     exports: DIRECTIVES.slice()
                 },] },
     ];
-    /** @nocollapse */
-    ViewportModule.ctorParameters = function () { return []; };
     return ViewportModule;
 }());
 export { ViewportModule };

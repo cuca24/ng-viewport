@@ -6,6 +6,6 @@ export declare class ScrollableContentDirective {
     private targetSelector;
     private scrollTargets;
     constructor(el: ElementRef, scroll: ScrollService);
-    private ngAfterViewInit();
-    private ngOnDestroy();
+    private ngAfterViewInit;
+    private ngOnDestroy;
 }

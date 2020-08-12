@@ -1,4 +1,5 @@
 import { Subject } from 'rxjs';
+import { share } from 'rxjs/operators';
 export function throttler(observable, throttleTime) {
     var subj = new Subject();
     var timeout = false;
@@ -14,5 +15,5 @@ export function throttler(observable, throttleTime) {
             allowed = true;
         }
     });
-    return subj.share();
+    return subj.pipe(share());
 }

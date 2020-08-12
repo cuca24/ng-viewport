@@ -8,6 +8,7 @@ var ScrollableContentDirective = /** @class */ (function () {
     }
     ScrollableContentDirective.prototype.ngAfterViewInit = function () {
         var _this = this;
+        var _a;
         if (this.targetSelector) {
             var list = Array.prototype.slice.call(this.el.nativeElement.querySelectorAll(this.targetSelector));
             (_a = this.scrollTargets).push.apply(_a, list);
@@ -19,7 +20,6 @@ var ScrollableContentDirective = /** @class */ (function () {
         this.scrollTargets.forEach(function (el) {
             _this.scroll.bind(el);
         });
-        var _a;
     };
     ScrollableContentDirective.prototype.ngOnDestroy = function () {
         var _this = this;
@@ -38,7 +38,7 @@ var ScrollableContentDirective = /** @class */ (function () {
         { type: ScrollService, },
     ]; };
     ScrollableContentDirective.propDecorators = {
-        'targetSelector': [{ type: Input, args: ['vp-scrollable-content',] },],
+        "targetSelector": [{ type: Input, args: ['vp-scrollable-content',] },],
     };
     return ScrollableContentDirective;
 }());

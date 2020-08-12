@@ -54,8 +54,8 @@ var InViewDirective = /** @class */ (function () {
         { type: ElementRef, },
     ]; };
     InViewDirective.propDecorators = {
-        'event': [{ type: Output, args: [SELECTOR,] },],
-        'config': [{ type: Input, args: [SELECTOR + '-config',] },],
+        "event": [{ type: Output, args: [SELECTOR,] },],
+        "config": [{ type: Input, args: [SELECTOR + '-config',] },],
     };
     return InViewDirective;
 }());

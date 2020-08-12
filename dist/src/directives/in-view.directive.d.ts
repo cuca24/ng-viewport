@@ -19,6 +19,6 @@ export declare class InViewDirective {
     constructor(trigger: TriggerService, el: ElementRef);
     config: IConfig;
     ngAfterViewInit(): void;
-    private isInViewPort();
-    private handler();
+    private isInViewPort;
+    private handler;
 }

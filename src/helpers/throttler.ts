@@ -1,4 +1,5 @@
 import { Observable, Subject } from 'rxjs';
+import { share } from 'rxjs/operators';
 
 export function throttler<T>(observable: Observable<T>, throttleTime: number):Observable<T> {
 	const subj: Subject<T> = new Subject();
@@ -20,5 +21,5 @@ export function throttler<T>(observable: Observable<T>, throttleTime: number):Ob
 		}
 	});
 
-	return subj.share();
+	return subj.pipe(share());
 }

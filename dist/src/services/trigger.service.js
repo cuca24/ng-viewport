@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { share } from 'rxjs/operators';
 import { ScrollService } from './scroll.service';
 var TriggerService = /** @class */ (function () {
     function TriggerService(scroll) {
         this._subj = new Subject();
-        this.observable = this._subj.share();
+        this.observable = this._subj.pipe(share());
         this.bind(scroll.onScroll);
     }
     TriggerService.prototype.bind = function (obs) {

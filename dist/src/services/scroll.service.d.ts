@@ -28,5 +28,5 @@ export declare class ScrollService {
      * Removes its listener from the target
      */
     unbind(target: EventTarget): void;
-    private static _handler(this, e);
+    private static _handler;
 }
